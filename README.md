@@ -1,6 +1,7 @@
 # Soham's Minecraft Server
 
 While the actually repository is used to save world data and settings, this README.md serves as a tool for me to document and explain how my Minecraft Server works.
+For more programming projects like this, check out my [website](https://msoham123.github.io).
 
 ## Section One - What is a Minecraft Server?
 
@@ -27,6 +28,8 @@ The second component to configure is your router. Port forwarding enables an ext
 ## Section Four - Server Config
 
 At this step, we can assume that you have your minecraft server running on your machine, and that it has been port forwarded succesfully. If you direct connect to your server in Minecraft, you should be able to join from anywhere. We need to configure a few things first before we give our IP address to friends or family. 
+
+![image](https://user-images.githubusercontent.com/51520568/114766862-ca618a80-9d1b-11eb-9f38-4594550478ac.png)
 
 The first thing we need to do is configure the server itself. Go to the Paper folder, and find the `server.properties` file. Here, you can change a myriad of settings from gamemode to port (I'm using default). 
 
