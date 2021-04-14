@@ -37,3 +37,14 @@ The first step does not require much config. Most Linux Distros have SSh (Secure
 The server name is the name of your machine, which you can find in the settings of the server machine. To find the IP of your machine type `hostname –I` into the terminal of the machine (server) to get the IP.
 
 If you are having trouble with SSH, please see this [guide](https://www.howtogeek.com/311287/how-to-connect-to-an-ssh-server-from-windows-macos-or-linux/).
+
+Linux provides us with daemons, which are processes that we can init and deinit alongside the server. Read [this](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units) if you want to learn more about daemons and systemctl. What we need to do is fairly straightforward:
+
+1). Create a `mcserver.service` file in your `/etc/systemd/system/` directory. 
+This is what my file looks like. We can see that that the ExecStart param lauches a bash script. This bash script is explained in the second point.
+
+![image](https://user-images.githubusercontent.com/51520568/114764644-0cd59800-9d19-11eb-91ab-213797204dc0.png)
+2). The script I am launching using the mcserver service is located in my Paper file. I created it there to make it easier to access. We can see that the script is executing one command `java -Xms2G -Xmx4G -jar paper-1.16.5-439.jar nogui`. What does this mean? Well, the java prefix means that we are using java to run the .jar file for the server. The -Xms2G and -Xmx4G means that the server will use a minimum of 2GB of RAM and a maximum of 4GB. My machine only has 8GB of ram, so this is a good amount to allocate. The actual .jar file is the program that we are exuciting. Because the .jar file and script are in the same directory, I can access it directly. Finally, the nogui component means that the server will not open a window to display the program. The screen for our server will not be on, and we do not need a GUI (Graphical User Inteface) since we have our mcserver service. Therefore, we are saving resources by disabling gui.
+![image](https://user-images.githubusercontent.com/51520568/114765116-a13ffa80-9d19-11eb-8f72-2b271872bbfe.png)
+
+
