@@ -28,7 +28,15 @@ The second component to configure is your router. Port forwarding enables an ext
 
 At this step, we can assume that you have your minecraft server running on your machine, and that it has been port forwarded succesfully. If you direct connect to your server in Minecraft, you should be able to join from anywhere. We need to configure a few things first before we give our IP address to friends or family. 
 
-The first thing we need to do is configure the server itself. Go to the Paper folder, and find the `server.properties` file. Here, you can change a myriad of settings from gamemode to port (I'm using default). Once you have the configuration you desire, we need to whitelist the players that are going to join the server. Whitelisting essentially tells the server that these players are allowed to join, and is a second layer of security beyond your firewall. To whitelist, go to your `whitelist.json` file. If you are unfamiliar with the JSON format, read the [documentation](https://minecraft.fandom.com/wiki/Whitelist.json).
+The first thing we need to do is configure the server itself. Go to the Paper folder, and find the `server.properties` file. Here, you can change a myriad of settings from gamemode to port (I'm using default). 
+
+![image](https://user-images.githubusercontent.com/51520568/114766459-44ddda80-9d1b-11eb-849e-a5017d12bc73.png)
+
+Once you have the configuration you desire, we need to whitelist the players that are going to join the server. Whitelisting essentially tells the server that these players are allowed to join, and is a second layer of security beyond your firewall. To whitelist, go to your `whitelist.json` file. If you are unfamiliar with the JSON format, read the [documentation](https://minecraft.fandom.com/wiki/Whitelist.json).
+
+![image](https://user-images.githubusercontent.com/51520568/114766523-57f0aa80-9d1b-11eb-9e30-4d86312e3eca.png)
+
+You can find the `uuid` key by inputing a username into this [website](https://mcuuid.net/).
 
 ## Section Five - Server Admin
 
