@@ -54,6 +54,7 @@ This is what my file looks like. We can see that that the ExecStart param lauche
  - `systemctl status mcserver` gives you the status of the server
  ![image](https://user-images.githubusercontent.com/51520568/114766022-bcf7d080-9d1a-11eb-9393-29a3390f72d8.png)
  - `systemctl start mcserver` will start your server
+
  ![image](https://user-images.githubusercontent.com/51520568/114765930-9fc30200-9d1a-11eb-9eea-f7e927277832.png)
  - `systemctl stop mcserver` will stop your server
  - `systemctl restart mcserver` will restart your server 
