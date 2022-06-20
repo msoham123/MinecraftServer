@@ -15,7 +15,7 @@ Here is a screenshot from my server. Exciting, right!
 
 Minecraft is a Java program that can be run on Windows, Mac, and Linux. The server software is no exception to this and you need Java to run it. Mojang provides a minecraft server JAR that you can use to run your server. However, there are a myriad of community forks of this JAR, and I am using one called Paper. Paper is a high performance fork of the Spigot Minecraft Server that aims to fix gameplay and mechanics inconsistencies as well as to improve performance. I am using Paper as opposed to other alternatives because my server machine is not an enterprise level server: it is a low spec old laptop. 
 
-(Note: I would highly recommend installing a Linux Distrubition on your machine. It makes a later step so much easier.)
+(Note: I would highly recommend installing a Linux Distribution on your machine. It makes a later step so much easier.)
 
 ## Section Three - Hardware
 
